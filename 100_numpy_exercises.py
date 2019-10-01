@@ -141,3 +141,6 @@ radii = np.sqrt(cartesian[:,0]**2 + cartesian[:,1]**2)
 angles = np.arctan2(cartesian[:,1],cartesian[:,0])
 polar = np.vstack((radii,angles)).T
 
+random_vector = np.random.rand(10)
+random_vector[random_vector.argmax()] = 0
+
